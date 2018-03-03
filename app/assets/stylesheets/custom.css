@@ -1,0 +1,23 @@
+ .dropdown:hover>.dropdown-menu {
+      display: block;
+}
+
+.navbar-nav li{
+	
+    margin-left: 5px;
+    margin-right: 5px; 
+     display: inline-block;
+     cursor: pointer;
+
+}
+
+.nav-item{
+	border: none;
+    border-right: 1px solid #1bc2ba;
+}
+.nav-link{
+color: #fff;
+}
+.principalMassege{
+margin-top: 5px;
+}
