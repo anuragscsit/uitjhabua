@@ -1,45 +1,78 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-    
-      <%= image_tag( '2.jpg',  :class => "img-fluid") %>
+<div class="row">
+  <div class="col-sm-9">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+
+          <%= image_tag( 'crl2.jpg',  :class => "img-fluid") %>
+        </div>
+        <div class="carousel-item text-center">
+         <%= image_tag( 'crl1.jpg',  :class => "img-fluid") %>
+       </div>
+       <div class="carousel-item text-center">
+         <%= image_tag( 'crl3.jpg',  :class => "img-fluid") %>
+       </div>
+     </div>
+     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="col-sm-3 side-menu" >
+  <div class="quick-links">
+  <div class="table-responsive">
+    <table class="table">
+      <tr>
+        <td >
+        <h4 class="text-center"><u>Quick Links</u></h4>
+          </td>
+        </tr> 
+        <tr>
+          <td>
+          <p>RGPV</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>RGPV</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>RGPV</p>
+          </td>
+        </tr>
+        
+      </table>
     </div>
-    <div class="carousel-item">
-       <%= image_tag( '1.jpg',  :class => "img-fluid") %>
-    </div>
-    <div class="carousel-item">
-       <%= image_tag( '2.jpg',  :class => "img-fluid") %>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
-
-<div class="row">
+<div class="row" style="background-color: #ddd">
   <div class="col-md-2 col-sm-12 principalMassege">
     <div >
-      <%= image_tag( 'rgpvlogo.png', width: "100" , height: "100", :class => "img-fluid") %>
+      <%#= image_tag( 'rgpvlogo.png', width: "100" , height: "100", :class => "img-fluid") %>
     </div>
     <div>
-      <p>Principal Messege</p>
+      <!-- <p>Principal Messege</p> -->
     </div>
   </div>
   <div class="col-md-10 col-sm-12">
-    
+
   </div>
 </div>
 <div>
-  
+
 </div>
+

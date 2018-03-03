@@ -20,4 +20,40 @@ color: #fff;
 }
 .principalMassege{
 margin-top: 5px;
+    margin-top: 5px;
+    /* border-color: #000; */
+    /*border-width: 1px;*/
+    border-radius: 4%;
+    background-color: white;
+}
+.carousel-item img{
+max-height: 350px;
+width: auto;
+}
+.side-menu{
+background-color: #343A40;
+padding: 0px;
+}
+.quick-links{
+	color: #fff;
+	padding: 5px;
+}
+.quick-links table tr td{
+	padding: 1px;
+}
+.quick-links table tr p{
+	margin-left: 5px;
+}
+#footer{
+
+}
+
+.footer-col{
+padding-left: 5px;
+}
+.footer-col p{
+line-height: 0.3;
+}
+.footer-col img,.footer-col h5 {
+margin: 10px;
 }
