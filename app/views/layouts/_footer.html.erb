@@ -1,43 +1,61 @@
-<div class="container">
-<footer id="footer">
-		<div class="row">
-			<div class="col-sm-3 footer-col">
-				<div class="text-center">
-					<%= link_to image_tag( 'rgpvlogo.png', width: "100" , height: "100", :class => "img-fluid"), root_path%>
+<div id="footer">
+	<div class="container">
+		<footer>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 footer-col">
+					<div class="text-center">
+						<%= link_to image_tag( 'rgpvlogo.png', width: "80" , height: "80", :class => "img-fluid"), root_path%>
+					</div>
+					<div class="text-center">
+						<h5>Dr. APJ Abdul Kalam UIT, Jhabua</h5>
+					</div>
 				</div>
-				<div class="text-center">
-					<h4>Dr. APJ Abdul Kalam UIT, Jhabua</h4>
+				<div class="col-md-3 col-sm-6 footer-col">
+				<div class= "footer-col-inner">
+						<h5>Call Us</h5>
+					</div>
+					<div class="footer-col-inner-content">
+						<p>For technical Support</p>
+						<p>09407554170</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 footer-col">
+					<div class= "footer-col-inner">
+						<h5>Anti Ragging</h5>
+					</div>
+					<div class="footer-col-inner-content">
+						<p>For technical Support</p>
+						<p>09407554170</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 footer-col">
+					<div class= "footer-col-inner">
+						<h5>Contact Us</h5>
+					</div>
+					<div class="footer-col-inner-content">
+						<p>Dr. APJ Abdul Kalam UIT</p>
+						<p>Govt. Polytechnic campus</p>
+						<p>Kishanpuri, Jhabua</p>
+						<p>457661</p>
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-3 footer-col">
-				<div>
-					<h5><u>Call Us</u></h5>
+		</footer>
+	</div>
+	<div class="bg-dark">
+		<div class=" container footer-bottom">
+			<div class="row">
+				<div class="col-md-6 text-center">
+				<div class="copyright">
+						<p>© All Rights Reserved for UIT Jhabua.</p>
+					</div>
 				</div>
-				<div>
-					<p>For technical Support</p>
-					<p>09407554170</p>
-				</div>
-			</div>
-			<div class="col-sm-3 footer-col">
-				<div>
-					<h5><u>Anti Ragging</u></h5>
-				</div>
-				<div>
-					<p>For technical Support</p>
-					<p>09407554170</p>
-				</div>
-			</div>
-			<div class="col-sm-3 footer-col">
-				<div>
-					<h5><u>Contact Us</u></h5>
-				</div>
-				<div>
-					<p>Dr. APJ Abdul Kalam UIT</p>
-					<p>Govt. Polytechnic campus</p>
-					<p>Kishanpuri, Jhabua</p>
-					<p>457661</p>
+				<div class="col-md-6 text-center">
+					<div class="dev">
+						<p>Meet the <%= link_to "developers.", home_developers_path%></p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</footer>
+	</div>
 </div>
