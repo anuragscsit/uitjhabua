@@ -98,3 +98,18 @@ line-height: 0.5;
   margin: 15px;
   vertical-align: top;
 }
+
+.dept_list{
+padding: 5px;
+margin: .5rem 0 1rem;
+
+    position: relative;
+}
+
+.dept_list .dept_name{
+padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+}

@@ -11,7 +11,7 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav text-center" >
           <li class="nav-item navbar-menu ">
-            <a class="nav-link" href="#">Home</a>
+            <%= link_to "Home", root_path, class: 'nav-link'%>
           </li>
           <li class="nav-item dropdown navbar-menu">
             <a class="nav-link">About </a>
@@ -27,7 +27,7 @@
            <li class="nav-item dropdown">
             <a class="nav-link">Academics</a>
             <ul class="dropdown-menu bg-dark">
-              <li><a class="nav-link" tabindex="-1" href="#">Departments</a></li>
+              <li><%= link_to "Departments", departments_index_path, class: 'nav-link'%></li>
               <li><a class="nav-link" tabindex="-1" href="#">Academic Calender</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Examination</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Time Table</a></li>
