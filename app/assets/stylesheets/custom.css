@@ -1,3 +1,11 @@
+ .text-white{
+color: #fff;
+ }
+
+
+
+
+
  .header-logo{
  	margin: 6px; 
  }
@@ -13,13 +21,25 @@
  .dropdown:hover>.dropdown-menu {
       display: block;
  }
-
+.top-nav{
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.16),-1px 0px 5px 0 rgba(0,0,0,1.12);
+}
 .navbar-nav li{
 	
-    margin-left: 5px;
-    margin-right: 5px; 
+    padding: 0 10px;
+        
+}
+.navbar-nav li a{
+  
+    color: #fff !important;
+    font-weight: 800;
+    overflow: hidden;
+    cursor: pointer;
      display: inline-block;
-     cursor: pointer;
+}
+.navbar-nav li a:hover{
+   color: #111 !important;
+  
 }
 
 .nav-item{
@@ -35,8 +55,8 @@ max-height: 350px;
 width: auto;
 }
 .side-menu{
-background-color: #343A40;
 padding: 0px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.16),-1px 0px 5px 0 rgba(0,0,0,1.12);
 }
 .quick-links{
 	color: #fff;
@@ -102,14 +122,35 @@ line-height: 0.5;
 .dept_list{
 padding: 5px;
 margin: .5rem 0 1rem;
-
-    position: relative;
+position: relative;
 }
-
+.dept-list-div {
+    
+    height: 100%;
+    margin-top: -8px;
+ }
 .dept_list .dept_name{
 padding: 5px;
     border: 1px solid #e0e0e0;
     border-radius: 2px;
     position: relative;
     text-align: center;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.16),0px 0px 0px 1px rgba(0,0,0,0.32);
 }
+.dept_list .dept_name p{
+    margin-top: 15px;
+    color: #007bff !important;
+  }
+.dept-more-link{
+    background-color: #F3F1EE;
+    height: 100%;
+    margin-top: 10px;
+ }
+ .dept-more-link h4 {
+    color: #fff;
+    padding-top: 5px;
+ }   
+ .dept-more-link p {
+    padding-top: 5px;
+    margin-left: 15px;
+ }  
