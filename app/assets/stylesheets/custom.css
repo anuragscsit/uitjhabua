@@ -2,10 +2,6 @@
 color: #fff;
  }
 
-
-
-
-
  .header-logo{
  	margin: 6px; 
  }
@@ -49,7 +45,12 @@ color: #fff;
 .nav-link{
 color: #fff;
 }
-
+.navbar-nav .dropdown-menu li a{
+  font-size: 14px;
+}
+.navbar-nav .dropdown-menu{
+min-width: 13rem;
+}
 .carousel-item img{
 max-height: 350px;
 width: auto;
@@ -68,12 +69,43 @@ padding: 0px;
 .quick-links table tr p{
 	margin-left: 5px;
 }
+section {
+  margin-top: 15px;
+}
+.more-content-btn{
+color: #fff;
+}
+.more-content{
+  border: 1px solid;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.16),-1px 0px 5px 0 rgba(0,0,0,1.12); 
+}
+.about,.campus-life,.gallery,.principle-desk{
+padding: 2px !important;
+}
+#about,#campus-life,#gallery,#principle-desk{
+position: relative;
+max-height: 130px;
+text-align: center;
+}
+#about .more-content-text, #campus-life .more-content-text , #gallery .more-content-text , #principle-desk .more-content-text{
+position: absolute;
+top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:rgba(204, 204, 204, 0.56);
+}
+.more-content img{
+  vertical-align: middle; 
+  max-height: 130px;
+}
+/*************footer**************/
 #footer{
     border-top: solid 5px #422;
 }
 
 .footer-col{
 	padding-left: 5px;
+  color: #fff;
 }
 .footer-col-inner-content{
 	margin: 15px;
@@ -92,7 +124,8 @@ padding: 0px;
 	color: #fff;
 	margin: 15px;
 }
-
+/*************end of footer**************/
+/*************developer**************/
 .devloper{
 	margin-top: 40px;
 }
@@ -118,7 +151,8 @@ line-height: 0.5;
   margin: 15px;
   vertical-align: top;
 }
-
+/*************end of developer**************/
+/*Department Index*/
 .dept_list{
 padding: 5px;
 margin: .5rem 0 1rem;
@@ -154,3 +188,5 @@ padding: 5px;
     padding-top: 5px;
     margin-left: 15px;
  }  
+
+/*end of department index*/

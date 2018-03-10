@@ -8,7 +8,6 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active text-center">
-
           <%= image_tag( 'crl2.jpg',  :class => "img-fluid") %>
         </div>
         <div class="carousel-item text-center">
@@ -17,45 +16,105 @@
        <div class="carousel-item text-center">
          <%= image_tag( 'crl3.jpg',  :class => "img-fluid") %>
        </div>
-     </div>
-     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
-    </a>
+      </a>
+    </div>
   </div>
-</div>
-<div class="col-sm-3 side-menu bg-primary" >
-  <div class="quick-links">
-    <div class="table-responsive">
-      <table class="table">
-        <tr>
-          <td >
-            <h5 class="text-center">Quick Links</h5>
-          </td>
-        </tr> 
-        <tr>
-          <td>
-            <p>RGPV</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>RGPV</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>RGPV</p>
-          </td>
-        </tr>
-        
-      </table>
+  <div class="col-sm-3 side-menu bg-primary" >
+    <div class="quick-links">
+      <div class="table-responsive">
+        <table class="table">
+          <tr>
+            <td >
+              <h5 class="text-center">Quick Links</h5>
+            </td>
+          </tr> 
+          <tr>
+            <td>
+              <p>RGPV</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>RGPV</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>RGPV</p>
+            </td>
+          </tr>
+
+        </table>
+      </div>
     </div>
   </div>
 </div>
-</div>
+<section id="index-more-section">
+
+ <div class="text-center">
+  <%= link_to "More", root_path , :class => "more-content-btn bg-primary " %>
+  </div>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 about">
+          <div class="more-content">
+          <div id="about">
+            <%= link_to root_path do %>
+            <%= image_tag( 'rgpvlogo.png', :class => "img-fluid") %>
+            <div class="more-content-text">
+              <h4>About UIT</h4>
+            </div>
+            <% end %>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 campus-life">
+          <div class="more-content">
+          <div id="campus-life">
+            <%= link_to root_path do %>
+            <%= image_tag( 'rgpvlogo.png', :class => "img-fluid") %>
+            <div class="more-content-text">
+              <h4>Campus life</h4>
+            </div>
+            <% end %>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 gallery">
+          <div class="more-content">
+          <div id="gallery">
+            <%= link_to root_path do %>
+            <%= image_tag( 'crl1.jpg', :class => "img-fluid") %>
+              <div class="more-content-text">
+              <h4>Gallery</h4>
+            </div>
+            <% end %>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 principle-desk">
+          <div class="more-content">
+           <div id="principle-desk">
+            <%= link_to root_path do %>
+            <%= image_tag( 'rgpvlogo.png', :class => "img-fluid") %>
+            <div class="more-content-text">
+              <h4>principle Message</h4>
+            </div>
+            <% end %>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
