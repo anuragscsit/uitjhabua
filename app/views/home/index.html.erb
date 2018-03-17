@@ -29,26 +29,26 @@
   </div>
   <div class="col-sm-3 side-menu bg-primary" >
     <div class="quick-links">
-      <div class="table-responsive">
-        <table class="table">
+      <div class="table-responsive ">
+        <table class="table quick-links-tab">
           <tr>
-            <td >
-              <h5 class="text-center">Quick Links</h5>
+            <td>
+              <h5 class="text-center" style="font-weight: bold">Quick Links</h5>
             </td>
           </tr> 
           <tr>
-            <td>
-              <p>RGPV</p>
+            <td class="imp-links">
+              <a href="http://www.rgpv.ac.in" target="_blank">RGPV</a>
             </td>
           </tr>
           <tr>
-            <td>
-              <p>RGPV</p>
+            <td class="imp-links">
+              <a href="http://www.dtempcounselling.org" target="_blank">DTE MP</a>
             </td>
           </tr>
           <tr>
-            <td>
-              <p>RGPV</p>
+            <td class="imp-links">
+              <a href="http://www.scholarshipportal.mp.nic.in" target="_blank" >Scholarship</a>
             </td>
           </tr>
 
@@ -58,10 +58,6 @@
   </div>
 </div>
 <section id="index-more-section">
-
- <div class="text-center">
-  <%= link_to "More", root_path , :class => "more-content-btn bg-primary " %>
-  </div>
   <div class="container">
     <div>
       <div class="row">
@@ -69,7 +65,7 @@
           <div class="more-content">
           <div id="about">
             <%= link_to root_path do %>
-            <%= image_tag( 'rgpvlogo.png', :class => "img-fluid") %>
+            <%= image_tag( 'bg1.jpg', :class => "img-fluid") %>
             <div class="more-content-text">
               <h4>About UIT</h4>
             </div>
@@ -81,7 +77,7 @@
           <div class="more-content">
           <div id="campus-life">
             <%= link_to root_path do %>
-            <%= image_tag( 'rgpvlogo.png', :class => "img-fluid") %>
+            <%= image_tag( 'bg3.jpg', :class => "img-fluid") %>
             <div class="more-content-text">
               <h4>Campus life</h4>
             </div>
@@ -105,7 +101,7 @@
           <div class="more-content">
            <div id="principle-desk">
             <%= link_to root_path do %>
-            <%= image_tag( 'rgpvlogo.png', :class => "img-fluid") %>
+            <%= image_tag( 'bg2.jpg', :class => "img-fluid") %>
             <div class="more-content-text">
               <h4>principle Message</h4>
             </div>

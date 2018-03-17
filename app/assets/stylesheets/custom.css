@@ -63,11 +63,27 @@ padding: 0px;
 	color: #fff;
 	padding: 5px;
 }
-.quick-links table tr td{
-	padding: 1px;
+.quick-links-tab {
+    border-collapse: separate !important ;
 }
-.quick-links table tr p{
-	margin-left: 5px;
+.imp-links{
+    background-color: #343;
+    border: 1px solid #343;
+    border-radius: 25px;
+    padding: 8px 2px 8px 2px !important;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.imp-links a{
+  color: #fff;
+  padding: 5px;
+
+}
+.imp-links a:hover{
+  color: #fff;
 }
 section {
   margin-top: 15px;
@@ -75,16 +91,16 @@ section {
 .more-content-btn{
 color: #fff;
 }
-.more-content{
+/*.more-content{
   border: 1px solid;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.16),-1px 0px 5px 0 rgba(0,0,0,1.12); 
-}
+}*/
 .about,.campus-life,.gallery,.principle-desk{
 padding: 2px !important;
 }
 #about,#campus-life,#gallery,#principle-desk{
 position: relative;
-max-height: 130px;
+max-height: auto;
 text-align: center;
 }
 #about .more-content-text, #campus-life .more-content-text , #gallery .more-content-text , #principle-desk .more-content-text{
