@@ -6,6 +6,9 @@ class HomeController < ApplicationController
 	def anoutUs
 		
 	end
+	def visionAndMission
+		
+	end
 	def campusLife
 		
 	end

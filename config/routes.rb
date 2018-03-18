@@ -7,4 +7,5 @@ get 'departments/index'
 get 'departments/cse'
 get 'departments/mechanical'
 get 'departments/sci_humanity'
+get 'home/visionAndMission'
 end

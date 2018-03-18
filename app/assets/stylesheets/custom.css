@@ -67,10 +67,12 @@ padding: 0px;
     border-collapse: separate !important ;
 }
 .imp-links{
-    background-color: #343;
-    border: 1px solid #343;
+    /*background-color: #343;
+    border: 1px solid #343;*/
+    border-bottom: 1px solid #dee2e6;
+    border-top: 0px !important;
     border-radius: 25px;
-    padding: 8px 2px 8px 2px !important;
+    padding: 0px 2px 0px 2px !important;
     text-align: center;
     color: #FFFFFF;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -206,3 +208,28 @@ padding: 5px;
  }  
 
 /*end of department index*/
+
+/*************SideMenu/ SideNav**************/
+.sidenav {
+    height: auto;
+    width: 200px;
+    z-index: 1;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    font-size: 16px;
+    text-decoration: none;
+}
