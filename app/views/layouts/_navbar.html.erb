@@ -1,6 +1,6 @@
-<div class="bg-primary top-nav">
+<div class="bg-voilet-blue top-nav">
   <div class="container">
-    <nav class="navbar navbar-expand-md bg-primary navbar-dark ">
+    <nav class="navbar navbar-expand-md bg-voilet-blue navbar-dark ">
 
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -15,45 +15,49 @@
           </li>
           <li class="nav-item dropdown navbar-menu">
             <a class="nav-link">About </a>
-            <ul class="dropdown-menu bg-primary">
-              <li><a class="nav-link" tabindex="-1" href="#">About Institute</a></li>
+            <ul class=" bg-voilet-blue  dropdown-menu">
+              <li><%= link_to "About Institute", home_aboutUs_path, class: 'nav-link'%></li>
               <li><%= link_to "Vision And Mission", home_visionAndMission_path, class: 'nav-link'%></li>
               <li><a class="nav-link" tabindex="-1" href="#">Principal Message</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Administration</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Committees</a></li>
               
-               </ul>
+            </ul>
           </li>
-           <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link">Academics</a>
-            <ul class="dropdown-menu bg-primary">
+            <ul class=" bg-voilet-blue dropdown-menu">
               <li><%= link_to "Departments", departments_index_path, class: 'nav-link'%></li>
               <li><a class="nav-link" tabindex="-1" href="#">Academic Calender</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Examination</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Time Table</a></li>
               
-               </ul>
+            </ul>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item dropdown ">
             <a class="nav-link" href="#">Admission</a>
+            <ul class=" bg-voilet-blue dropdown-menu">
+              <li><a class="nav-link" tabindex="-1" href="#">Admission Procedure</a></li>
+              <li><a class="nav-link" tabindex="-1" href="#">Admission Criteria</a></li>
+              <li><a class="nav-link" tabindex="-1" href="#">Programmes</a></li>
+            </ul>
           </li> 
           
           <li class="nav-item dropdown">
             <a class="nav-link" >Student Zone</a>
-            <ul class="dropdown-menu bg-primary">
+            <ul class=" bg-voilet-blue dropdown-menu">
               <li><a class="nav-link" tabindex="-1" href="#">Student Activities</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Scholership</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">NSS</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">UIT SC/ST Cell</a></li>
-               </ul>
+            </ul>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="#">Contact Us</a>
           </li> 
-           
+
         </ul>
       </div> 
     </nav>
   </div>
 </div>
- 

@@ -1,6 +1,9 @@
  .text-white{
 color: #fff;
  }
+ .bg-voilet-blue{
+  background-color: #274472;
+ }
 
  .header-logo{
  	margin: 6px; 
@@ -47,9 +50,12 @@ color: #fff;
 }
 .navbar-nav .dropdown-menu li a{
   font-size: 14px;
+      border-bottom: 1px solid #ccc;
+      display: block;
 }
 .navbar-nav .dropdown-menu{
 min-width: 13rem;
+background-color: #274472;
 }
 .carousel-item img{
 max-height: 350px;
@@ -251,4 +257,5 @@ padding: 5px;
   text-align: center;
   font-size: 22px;
   font-weight: 800;
+  color: #fff;
 }
