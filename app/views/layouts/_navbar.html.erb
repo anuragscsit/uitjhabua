@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-md bg-voilet-blue navbar-dark ">
 
       <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">Menu 
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -14,7 +14,7 @@
             <%= link_to "HOME", root_path, class: 'nav-link'%>
           </li>
           <li class="nav-item dropdown navbar-menu">
-            <a class="nav-link">ABOUT </a>
+            <a class="nav-link" tabindex="0">ABOUT </a>
             <ul class=" bg-voilet-blue  dropdown-menu">
               <li><%= link_to "About Institute", home_aboutUs_path, class: 'nav-link'%></li>
               <li><%= link_to "VISION AND MISSION", home_visionAndMission_path, class: 'nav-link'%></li>
@@ -35,7 +35,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown ">
-            <a class="nav-link" href="#">ADMISSION</a>
+            <a class="nav-link">ADMISSION</a>
             <ul class=" bg-voilet-blue dropdown-menu">
               <li><a class="nav-link" tabindex="-1" href="#">Admission Procedure</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Admission Criteria</a></li>
