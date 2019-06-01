@@ -315,3 +315,11 @@
   margin-left:10px;
 
 }
+.committe-table {
+  display: inline-table !important;
+}
+.committe-table th, .committe-table td{
+  padding: 5px !important;
+
+  /*min-width: 200px;*/
+}
