@@ -296,3 +296,13 @@
   font-weight: 800;
   color: #fff;
 }
+.bg-color-light{
+  background-color: #f0f0f0 !important;
+}
+
+.principal-info {
+  margin: 0px !important; 
+  font-size: 22px;
+  font-weight: 800;
+
+}

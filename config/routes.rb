@@ -9,4 +9,5 @@ get 'departments/mechanical'
 get 'departments/sci_humanity'
 get 'home/visionAndMission'
 get 'home/aboutUs'
+get 'home/principalMassege'
 end
