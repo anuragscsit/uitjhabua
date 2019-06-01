@@ -10,4 +10,5 @@ get 'departments/sci_humanity'
 get 'home/visionAndMission'
 get 'home/aboutUs'
 get 'home/principalMassege'
+get 'home/administration'
 end

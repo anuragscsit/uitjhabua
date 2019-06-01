@@ -18,7 +18,7 @@ class HomeController < ApplicationController
 	def photoGallery
 		
 	end
-	def adminstration
+	def administration
 		
 	end
 	def developers
