@@ -11,4 +11,5 @@ get 'home/visionAndMission'
 get 'home/aboutUs'
 get 'home/principalMassege'
 get 'home/administration'
+get 'home/committee'
 end

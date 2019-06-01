@@ -3,7 +3,7 @@ class HomeController < ApplicationController
 	def index
 		
 	end
-	def anoutUs
+	def aboutUs
 		
 	end
 	def visionAndMission
@@ -19,6 +19,9 @@ class HomeController < ApplicationController
 		
 	end
 	def administration
+		
+	end
+	def committee
 		
 	end
 	def developers
