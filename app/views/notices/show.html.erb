@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Notice name:</strong>
+  <%= @notice.notice_name %>
+</p>
+
+<p>
+  <strong>Notice detail:</strong>
+  <%= @notice.notice_detail %>
+</p>
+
+<p>
+  <strong>Notice type:</strong>
+  <%= @notice.notice_type %>
+</p>
+
+<%= link_to 'Edit', edit_notice_path(@notice) %> |
+<%= link_to 'Back', notices_path %>

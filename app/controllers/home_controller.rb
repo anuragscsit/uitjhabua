@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
 	def index
-		
+		@notice = Notice.all
 	end
 	def aboutUs
 		
