@@ -136,6 +136,24 @@
     vertical-align: middle; 
     max-height: 130px;
   }
+
+  #index-more-section{
+    background-color: #ccc;
+    padding-top: 10px; 
+    padding-bottom: 20px;
+  }
+  .building_img1 {
+    /*max-width: auto;*/
+    margin-bottom: 10px;
+    height: 97% !important;
+    border: 1px #ccc;
+  }
+  .building_img2 {
+    /*max-width: auto;*/
+    margin-bottom: 10px;
+    
+  }
+
   /*************footer**************/
   #footer{
     border-top: solid 5px #422;
