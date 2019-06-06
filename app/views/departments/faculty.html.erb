@@ -1,0 +1,23 @@
+<Section>
+	<div class="container-fluid">
+	<div class=" row">
+		<div class="col-md-8">
+		<% @faculty.each do |faculty| %> 
+          <div style="background-color: #f6f6f6;">
+            <p style="font-size: 16px; font-weight:800;"><%=faculty.name %> </p>
+            <p style=""><%=faculty.designation %> </p> 
+            <p style="">Experience: <%=faculty.Experience %> Years</p>
+            <p style="">Qualification: <%=faculty.qualification %> </p>
+            <p style="">Specialization: <%=faculty.specialization %> </p>
+            <p style="">Contact: <%=faculty.contact %> </p>
+            </div>
+            <hr>
+        <% end %>
+        
+        <div class="col-md-4">
+        	
+        </div>
+        </div>
+	</div>
+</div>
+</Section>

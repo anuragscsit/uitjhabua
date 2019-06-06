@@ -28,6 +28,7 @@
             <a class="nav-link">ACADEMICS</a>
             <ul class=" bg-voilet-blue dropdown-menu">
               <li><%= link_to "Departments", departments_index_path, class: 'nav-link'%></li>
+               <li><%= link_to "Faculties", departments_faculty_path, class: 'nav-link'%></li>
               <li><a class="nav-link" tabindex="-1" href="#">Academic Calender</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Examination</a></li>
               <li><a class="nav-link" tabindex="-1" href="#">Time Table</a></li>
@@ -38,7 +39,7 @@
             <a class="nav-link">ADMISSION</a>
             <ul class=" bg-voilet-blue dropdown-menu">
               <li><%= link_to "Admission procedure", admission_procedure_path, class: 'nav-link'%></li>
-              <li><a class="nav-link" tabindex="-1" href="#">Admission Criteria</a></li>
+              <!-- <li><a class="nav-link" tabindex="-1" href="#">Admission Criteria</a></li> -->
               <li><%= link_to "Programme", admission_BTech_path, class: 'nav-link'%></li>
             </ul>
           </li> 

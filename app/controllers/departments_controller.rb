@@ -1,6 +1,7 @@
 
 class DepartmentsController < ApplicationController
 	
+	
 	def index
 		
 	end
@@ -17,5 +18,10 @@ class DepartmentsController < ApplicationController
 	def sci_humanity
 		
 	end
+
+	def faculty
+    @faculty = Faculty.all
+    
+  end
 
 end
