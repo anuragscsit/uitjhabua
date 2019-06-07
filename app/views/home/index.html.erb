@@ -54,6 +54,34 @@
 
         </table>
       </div>
+
+<!-- ---------------------Popup Notice ----------------->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
+
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+         <h5 class="modal-title"><i class="fa fa-bell"></i>Important Alerts</h5>
+          <button type="button" class="close pull-right" data-dismiss="modal">×</button>
+          
+        </div>
+        <div class="modal-body">
+         <p><i class="fa fa-arrow-circle-right"></i>Commencement of classes for academic session 2019-20 3rd, 5th & 7th Semester BE/B.Tech: 1th July 2019</p>
+         <p><i class="fa fa-arrow-circle-right"></i>Last Date of fees Submission for academic session 2019-20: 15th July 2019</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">More</button> -->
+        </div>
+      </div>
+
+    </div>
+</div>
+
+<!-- -------------End of Popup Notice --------------->
+
+
       <div>
         
         <p class="text-center" style="font-weight: bold;color: #C4D400; border-bottom: 1px solid #dee2e6;">Latest Updates</p>
@@ -147,3 +175,9 @@
   </div>
 </section>
 
+
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#onload').modal('show');
+    });
+</script>

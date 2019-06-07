@@ -157,7 +157,21 @@
     /*height: 97% !important;*/
     }
  
-
+ /*---------------Home page Model -------------*/
+.modal-header{
+  background-color: #fff;
+  color: #ab0404;
+  border-top-left-radius: 0rem !important; 
+  border-top-right-radius: 0.3rem !important; 
+}
+.modal-body p{
+    border: solid 1px;
+    padding: 5px;
+    border-color: #000;
+    background-color: #284471;
+    color: #fff;
+    }
+/*-----------End of model-------------*/
   /*************footer**************/
   #footer{
     border-top: solid 5px #422;

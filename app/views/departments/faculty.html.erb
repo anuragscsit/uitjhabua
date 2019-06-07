@@ -4,12 +4,12 @@
 		<div class="col-md-8">
 		<% @faculty.each do |faculty| %> 
           <div style="background-color: #f6f6f6;">
-            <p style="font-size: 16px; font-weight:800;"><%=faculty.name %> </p>
-            <p style=""><%=faculty.designation %> </p> 
-            <p style="">Experience: <%=faculty.Experience %> Years</p>
-            <p style="">Qualification: <%=faculty.qualification %> </p>
-            <p style="">Specialization: <%=faculty.specialization %> </p>
-            <p style="">Contact: <%=faculty.contact %> </p>
+            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
+            <p><span>Designation:</span><%=faculty.designation %> </p> 
+            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
+            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
+            <p><span>Specialization: </span><%=faculty.specialization %> </p>
+            <p><span>Contact: </span><%=faculty.contact %> </p>
             </div>
             <hr>
         <% end %>
@@ -21,3 +21,11 @@
 	</div>
 </div>
 </Section>
+<style type="text/css">
+	p{
+		margin:0px 0px;
+	}
+	span{
+		font-weight:800;
+		}
+</style>
