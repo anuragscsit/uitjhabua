@@ -20,8 +20,7 @@ class DepartmentsController < ApplicationController
 	end
 
 	def faculty
-    @faculty = Faculty.all
-    
-  end
+    	@faculty = Faculty.all
+    end
 
 end

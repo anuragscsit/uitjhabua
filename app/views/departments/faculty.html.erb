@@ -1,25 +1,53 @@
 <Section>
 	<div class="container-fluid">
 	<div class=" row">
-		<div class="col-md-8">
-		<% @faculty.each do |faculty| %> 
+		<div class="col-md-5">
+		
           <div style="background-color: #f6f6f6;">
-            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
-            <p><span>Designation:</span><%=faculty.designation %> </p> 
-            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
-            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
-            <p><span>Specialization: </span><%=faculty.specialization %> </p>
-            <p><span>Contact: </span><%=faculty.contact %> </p>
-            </div>
+          	<% @faculty.each do |faculty| %> 
+          	<% if faculty.department == "Mech. Engg." and faculty.designation == "HOD" %>
+	            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
+	            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
+	            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
+	            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
+	            <p><span>Specialization: </span><%=faculty.specialization %> </p>
+	            <p><span>Contact: </span><%=faculty.contact %> </p>
+	            <p><span>Email: </span><%=faculty.email %> </p>
             <hr>
+            <% end %>
         <% end %>
-        
-        <div class="col-md-4">
-        	
+         <% @faculty.each do |faculty| %>
+            <% if faculty.department == "Mech. Engg." and faculty.designation != "HOD" %>
+	            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
+	            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
+	            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
+	            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
+	            <p><span>Specialization: </span><%=faculty.specialization %> </p>
+	            <p><span>Contact: </span><%=faculty.contact %> </p>
+	            <p><span>Email: </span><%=faculty.email %> </p>
+            <hr>
+            <% end %>
+          <% end %>
+          </div>   
+        </div>
+        <div class="col-md-5">
+        	<% @faculty.each do |faculty| %> 
+          <div style="background-color: #f6f6f6;">
+          	<% if faculty.department !="Mech. Engg." %>
+	            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
+	            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
+	            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
+	            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
+	            <p><span>Specialization: </span><%=faculty.specialization %> </p>
+	            <p><span>Contact: </span><%=faculty.contact %> </p>
+	            <p><span>Email: </span><%=faculty.email %> </p>
+ 				<hr>           
+            <% end %>
+          </div>
+        <% end %>
         </div>
         </div>
 	</div>
-</div>
 </Section>
 <style type="text/css">
 	p{
