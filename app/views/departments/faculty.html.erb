@@ -1,57 +1,77 @@
 <Section>
 	<div class="container-fluid">
-	<div class=" row">
-		<div class="col-md-5">
-		
-          <div style="background-color: #f6f6f6;">
-          	<% @faculty.each do |faculty| %> 
-          	<% if faculty.department == "Mech. Engg." and faculty.designation == "HOD" %>
-	            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
-	            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
-	            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
-	            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
-	            <p><span>Specialization: </span><%=faculty.specialization %> </p>
-	            <p><span>Contact: </span><%=faculty.contact %> </p>
-	            <p><span>Email: </span><%=faculty.email %> </p>
-            <hr>
-            <% end %>
-        <% end %>
-         <% @faculty.each do |faculty| %>
-            <% if faculty.department == "Mech. Engg." and faculty.designation != "HOD" %>
-	            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
-	            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
-	            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
-	            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
-	            <p><span>Specialization: </span><%=faculty.specialization %> </p>
-	            <p><span>Contact: </span><%=faculty.contact %> </p>
-	            <p><span>Email: </span><%=faculty.email %> </p>
-            <hr>
-            <% end %>
-          <% end %>
-          </div>   
-        </div>
-        <div class="col-md-5">
-        	<% @faculty.each do |faculty| %> 
-          <div style="background-color: #f6f6f6;">
-          	<% if faculty.department !="Mech. Engg." %>
-	            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
-	            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
-	            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
-	            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
-	            <p><span>Specialization: </span><%=faculty.specialization %> </p>
-	            <p><span>Contact: </span><%=faculty.contact %> </p>
-	            <p><span>Email: </span><%=faculty.email %> </p>
- 				<hr>           
-            <% end %>
-          </div>
-        <% end %>
-        </div>
-        </div>
+		<div>
+			<div style="margin-bottom: 20px;">
+				<h3 style="background-color: #0a9ea2;color: #fff;text-align: center;">Faculties</h3>
+			</div>
+		</div>
+		<div class=" row">
+			<div class="col-md-5 offset-md-1">
+			
+	          <div style="background-color: #f6f6f6;">
+	          	<% @faculty.each do |faculty| %> 
+	          	<% if faculty.department == "Mech. Engg." and faculty.designation == "HOD" %>
+		            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
+		            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
+		            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
+		            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
+		            <p><span>Specialization: </span><%=faculty.specialization %> </p>
+		            <p><span>Contact: </span><%=faculty.contact %> </p>
+		            <p><span>Email: </span><%=faculty.email %> </p>
+	            <hr>
+	            <% end %>
+	        <% end %>
+	         <% @faculty.each do |faculty| %>
+	            <% if faculty.department == "Mech. Engg." and faculty.designation != "HOD" %>
+		            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
+		            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
+		            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
+		            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
+		            <p><span>Specialization: </span><%=faculty.specialization %> </p>
+		            <p><span>Contact: </span><%=faculty.contact %> </p>
+		            <p><span>Email: </span><%=faculty.email %> </p>
+	            <hr>
+	            <% end %>
+	          <% end %>
+	          </div>   
+	        </div>
+	        <div class="col-md-5">
+	        	 <div style="background-color: #f6f6f6;">
+	          	<% @faculty.each do |faculty| %> 
+	          	<% if faculty.department == "CSE" and faculty.designation == "HOD" %>
+		            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
+		            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
+		            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
+		            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
+		            <p><span>Specialization: </span><%=faculty.specialization %> </p>
+		            <p><span>Contact: </span><%=faculty.contact %> </p>
+		            <p><span>Email: </span><%=faculty.email %> </p>
+	            <hr>
+	            <% end %>
+	        <% end %>
+	         <% @faculty.each do |faculty| %>
+	            <% if faculty.department !="Mech. Engg." and faculty.designation != "HOD" %>
+		            <p style="font-size: 18px; font-weight:800; color: #2b0000;"><%=faculty.name %> </p>
+		            <p><span>Designation:</span><%=faculty.designation %> <%=faculty.department %> </p> 
+		            <p><span>Experience:</span> <%=faculty.Experience %> Years</p>
+		            <p><span>Qualification:</span> <%=faculty.qualification %> </p>
+		            <p><span>Specialization: </span><%=faculty.specialization %> </p>
+		            <p><span>Contact: </span><%=faculty.contact %> </p>
+		            <p><span>Email: </span><%=faculty.email %> </p>
+	            <hr>
+	            <% end %>
+	          <% end %>
+	          </div>   
+	        </div>
+	        </div>
+	        </div>
+		</div>
 	</div>
 </Section>
 <style type="text/css">
 	p{
 		margin:0px 0px;
+		padding-left:10px;
 	}
 	span{
 		font-weight:800;
