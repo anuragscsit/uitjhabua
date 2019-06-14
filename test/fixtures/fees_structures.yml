@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  program: MyString
+  session: MyString
+  year: MyString
+  feesinfo: MyString
+
+two:
+  program: MyString
+  session: MyString
+  year: MyString
+  feesinfo: MyString

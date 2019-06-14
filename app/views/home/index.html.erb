@@ -68,7 +68,7 @@
         
         <marquee height="162" class="side-notice" scrollamount="3" border-color:#000000;="" direction="up" onmouseover="this.stop();" onmouseout="this.start();" style="border: 1px solid rgb(255, 255, 255); font-size: 14px;"> 
            
-           <% @notice.each do |notice| %> 
+           <% @notice.order('created_at DESC').each do |notice| %> 
 
           
             <p><span><%= image_tag( 'new-overlay.jpg',  :class => "img-fluid") %></span><a href="<%= url_for("#{notice.notice_detail}")%>" target="_blank " style="color: #fff ;"><%=notice.notice_name %> </a></p>
@@ -99,6 +99,7 @@
         <div class="modal-body">
          <p><i class="fa fa-arrow-circle-right"></i>Commencement of classes for academic session 2019-20 3rd, 5th & 7th Semester BE/B.Tech: 1th July 2019</p>
          <p><i class="fa fa-arrow-circle-right"></i>Last Date of fees Submission for academic session 2019-20: 15th July 2019</p>
+         <p><i class="fa fa-arrow-circle-right"></i> <a href="https://drive.google.com/open?id=1d2urM2xplso1tIxguD0OHk_Eliq9jERi" target="blank" style="color: #fff;">No dues form</a></p>
         </div>
         <div class="modal-footer">
           <!-- <button type="button" class="btn btn-default" data-dismiss="modal">More</button> -->

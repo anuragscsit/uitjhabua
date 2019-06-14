@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fees Structures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Session</th>
+      <th>Year</th>
+      <th>Feesinfo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fees_structures.each do |fees_structure| %>
+      <tr>
+        <td><%= fees_structure.program %></td>
+        <td><%= fees_structure.session %></td>
+        <td><%= fees_structure.year %></td>
+        <td><%= fees_structure.feesinfo %></td>
+        <td><%= link_to 'Show', fees_structure %></td>
+        <td><%= link_to 'Edit', edit_fees_structure_path(fees_structure) %></td>
+        <td><%= link_to 'Destroy', fees_structure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fees Structure', new_fees_structure_path %>

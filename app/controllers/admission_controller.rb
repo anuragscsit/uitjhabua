@@ -7,4 +7,10 @@ class AdmissionController < ApplicationController
 	def procedure
 		
 	end
+
+	def fees_structure
+    	@fees = FeesStructure.all
+  	end
+	
+	
 end

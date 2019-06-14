@@ -22,5 +22,7 @@ class DepartmentsController < ApplicationController
 	def faculty
     	@faculty = Faculty.all
     end
+    
+    
 
 end

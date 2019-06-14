@@ -1,0 +1,2 @@
+class FeesStructure < ApplicationRecord
+end

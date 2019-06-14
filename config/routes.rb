@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :fees_structures
+
   resources :faculties
   get 'departments/faculty'
   resources :notices
@@ -15,6 +17,9 @@ get 'home/aboutUs'
 get 'home/principalMassege'
 get 'home/administration'
 get 'home/committee'
+get 'home/photoGallery'
 get 'admission/BTech'
 get 'admission/procedure'
+get 'admission/fees_structure'
+
 end
